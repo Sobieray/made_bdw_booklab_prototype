@@ -1,17 +1,18 @@
 /* Move this to position bars*/
 .cd-dropdown,
 .cd-select {
-	float: left;
 	position: relative;
 	width: 200px;
-	margin: 10px;
-	margin-right: 10px;
 	display: inline-block;
+	margin-right: 20px;
 }
 
-.dd-4 {
-	margin-right: 0;
+#drop-downs {
+	margin: 0 auto;
+	width: 900px;
+	padding-left: 125px;
 }
+
 /* Change fonts */
 .cd-dropdown > span {
 	width: 100%;

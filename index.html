@@ -14,43 +14,47 @@
         </section><!-- top nav-->
 
         <section class="manifesto-nav">
-            <h2>Where America Shops for American Made</h2>
             <h1>Create Your Shopping Manifesto</h1>
-            <select id="cd-dropdown">
-                <option value="-1" selected>Made in America</option>
-            </select>
+            <ul class="manifesto-heading">
+                <li class="heading-1">I'm Shopping For</li>
+                <li class="heading-2">I'm Shopping In</li>
+                <li class="heading-3">Make My Life</li>
+            </ul>
 
+        <section id="drop-downs">
             <select id="cd-dropdown2" name="cd-dropdown" class="cd-select">
-                <option value="-1" selected>I'm Shopping For</option>
-                <option value="1" data-label="menWear">Men's Wear</option>
+                <option value="-1" selected></option>
+                <option value="1">Men's Wear</option>
                 <option value="2">Women's Wear</option>
-                <option value="3" data-label="Outdoors">Outdoors</option>
+                <option value="3">Outdoors</option>
                 <option value="4">Home</option>
             </select>
 
             <select id="cd-dropdown3" name="cd-dropdown" class="cd-select">
-                <option value="-1" selected>I'm Shopping In</option>
-                <option value="City" class="bike">On my bike</option>
-                <option value="Woods" data-label="WoodsOption">In the woods</option>
+                
+                <option value="-1" selected></option>
+                <option value="1" class="bike">On my bike</option>
+                <option value="2" class="woods">In the woods</option>
                 <option value="3" >Modern Home</option>
                 <option value="4" >Beach Side</option>
             </select>
-        
+
             <select id="cd-dropdown4" name="cd-dropdown dd-4" class="cd-select">
-                <option value="-1" selected>I Want To Be</option>
+                <option value="-1" selected></option>
                 <option value="1" data-label="fancy">Fancy</option>
                 <option value="2" data-label="comfortable">Comfortable</option>
                 <option value="3" class="">Vintage</option>
                 <option value="4" class="">Rugged</option>
             </select>
+        </section>
 
         </section><!-- manifesto nav-->
 
         <div class="product-display">
-            <div class="backgrd">
-                <img src="images/made.jpg" id="made">
-                <img src="images/san-fran.jpg" id="city" class="hidden">
-                <img src="images/scenery.jpg" id="woods" class="hidden">
+            <div class="background-image">
+                <img src="images/office.png" id="made" class="hidden">
+                <img src="images/bikes.png" id="city" class="hidden">
+                <img src="images/outdoor.png" id="woods" class="hidden">
             </div><!-- background image-->
         </div><!-- product display -->
 
@@ -58,11 +62,6 @@
 		<script type="text/javascript" src="js/jquery.dropdown.js"></script>
         <script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript">
-            $( function() {
-                $( '#cd-dropdown' ).dropdown( {
-                    gutter : 5
-                } );
-            });
 			$( function() {
 				$( '#cd-dropdown2' ).dropdown( {
 					gutter : 5
