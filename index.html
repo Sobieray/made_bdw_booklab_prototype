@@ -1,52 +1,52 @@
 <!DOCTYPE HTML> <!-- HTML5 doctype -->
 <html>
     <head>
+        <title>Made Collection Prototype</title>
         <link rel="stylesheet" type="text/css" href="css/drop-down-style.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
         <script src="js/modernizr.custom.63321.js"></script>
     </head>
 
     <body>
-    <section class="top-nav">
-    </section><!-- top nav-->
+        <section class="top-nav">
+            <img src="images/top-nav-bar.jpg" alt="Made Collection Top Nav Bar">
+        </section><!-- top nav-->
 
-    <section class="manifesto-nav">
-        <div class="q-1">
+        <section class="manifesto-nav">
+            <h2>Where America Shops for American Made</h2>
+            <h1>Create Your Shopping Manifesto</h1>
+            <select id="cd-dropdown">
+                <option value="-1" selected>Made in America</option>
+            </select>
+
             <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
-                <option value="-1" selected>Choose your favorite animal</option>
+                <option value="-1" selected>I'm Shopping For</option>
                 <option value="1" class="icon-monkey">Monkey</option>
                 <option value="2" class="icon-bear">Bear</option>
                 <option value="3" class="icon-squirrel">Squirrel</option>
                 <option value="4" class="icon-elephant">Elephant</option>
             </select>
         </div>
-        <div class="q-2">
+        
             <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
-                <option value="-1" selected>Choose your favorite animal</option>
+                <option value="-1" selected>Location</option>
                 <option value="1" class="icon-monkey">Monkey</option>
                 <option value="2" class="icon-bear">Bear</option>
                 <option value="3" class="icon-squirrel">Squirrel</option>
                 <option value="4" class="icon-elephant">Elephant</option>
             </select>
-        </div>
-        <div class="q-3">
-            <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
-                <option value="-1" selected>Choose your favorite animal</option>
+        
+            <select id="cd-dropdown" name="cd-dropdown dd-4" class="cd-select">
+                <option value="-1" selected>Make My Life</option>
                 <option value="1" class="icon-monkey">Monkey</option>
                 <option value="2" class="icon-bear">Bear</option>
                 <option value="3" class="icon-squirrel">Squirrel</option>
                 <option value="4" class="icon-elephant">Elephant</option>
             </select>
-        </div>
-        <div class="q-4">
-            <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
-                <option value="-1" selected>Choose your favorite animal</option>
-                <option value="1" class="icon-monkey">Monkey</option>
-                <option value="2" class="icon-bear">Bear</option>
-                <option value="3" class="icon-squirrel">Squirrel</option>
-                <option value="4" class="icon-elephant">Elephant</option>
-            </select>
-        </div>
-    </section><!-- manifesto nav-->
+        </section><!-- manifesto nav-->
+
+        <section class="product-display">
+        </section><!-- product display -->
 
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.dropdown.js"></script>

@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.top-nav {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.top-nav img {
+	width: 900px;
+	border-bottom: 4px solid #222;
+}
+
+.manifesto-nav {
+	padding-top: 10px;
+	width: 900px;
+	margin: 0 auto;
+}
+
+.manifesto-nav h1 {
+	font-size: 18px;
+	font-family: 'adobe-caslon-pro';
+	color: #222222;
+	text-transform: uppercase;
+
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.manifesto-nav h2 {
+	font-size: 10px;
+	font-family: 'adobe-caslon-pro';
+	color: #999;
+	text-transform: uppercase;
+	font-style: italic;
+
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
