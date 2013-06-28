@@ -32,13 +32,6 @@ $('.woods').live('click', function(){
   $('#city').addClass('hidden');
 });
 
-$('.comfortable').live('click', function(){
-  $('#woods').css('display', '');
-  $('#outdoor_comfy').fadeIn(1500, function(){
-    //
-  });
-  $('#woods').addClass('hidden');
-});
 
 /* CHANGING FROM MADE TO WOODS */
 
@@ -49,3 +42,40 @@ $('.woods').live('click', function(){
   });
   $('#made').addClass('hidden');
 });
+
+$('.comfortable').live('click', function(){
+  $('#woods').css('display', '');
+  $('#outdoor_comfy').fadeIn(1500, function(){
+    //
+  });
+  $('#woods').addClass('hidden');
+});
+
+$('#outdoor_comfy').live('click', function(){
+  $('#outdoor_comfy').css('display', '');
+  $('#comfy_hover').fadeIn(0, function(){
+    //
+  });
+  $('#outdoor_comfy').addClass('hidden');
+});
+
+$('#comfy_hover').live('click', function(){
+  $('#comfy_hover').css('display', '');
+  $('#video').fadeIn(500, function(){
+    //
+  });
+  $('#comfy_hover').addClass('hidden');
+});
+
+$('#video').live('click', function(){
+  $('#video').css('display', '');
+  $('#after_video').fadeIn(1000, function(){
+    //
+  });
+  $('#video').addClass('hidden');
+});
+
+
+
+
+

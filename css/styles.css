@@ -41,6 +41,7 @@
 	height: 250px;
 	margin: 0 auto;
 	margin-top: 30px;
+	margin-bottom: 200px;
 }
 
 .background-image {
@@ -51,6 +52,7 @@
 .background-image img {
 	width: 900px;
 	height: 500px;
+	margin-bottom: 200px;
 }
 
 .hidden {
@@ -60,7 +62,7 @@
 .manifesto-heading {
 	list-style: none;
 	width: 900px;
-	margin-left: 165px;
+	margin-left: 150px;
 	margin-bottom: 20px;
 }
 
@@ -69,21 +71,27 @@
 	display: inline;
 	float: left;
 	margin-bottom: 20px;
-	margin-right: 20px;
+	margin-right: 30px;
 
 	font-family: 'ff-dagny-web-pro';
 	text-transform: uppercase;
 	color: #CCC;
 }
 
+.american_made {
+	margin-left: 340px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
 
+#outdoor_comfy:hover {
+	background-image: url(images/comfy_hover.jpg);
+}
 
-
-
-
-
-
-
+#video {
+	display: none;
+	margin-bottom: 200px;
+}
 
 
 
