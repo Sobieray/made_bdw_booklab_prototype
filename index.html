@@ -8,6 +8,7 @@
     </head>
 
     <body>
+
         <section class="top-nav">
             <img src="images/top-nav-bar.jpg" alt="Made Collection Top Nav Bar">
         </section><!-- top nav-->
@@ -19,42 +20,43 @@
                 <option value="-1" selected>Made in America</option>
             </select>
 
-            <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+            <select id="cd-dropdown2" name="cd-dropdown" class="cd-select">
                 <option value="-1" selected>I'm Shopping For</option>
-                <option value="1" class="">Monkey</option>
-                <option value="2" class="">Bear</option>
-                <option value="3" class="">Squirrel</option>
-                <option value="4" class="">Elephant</option>
+                <option value="1" data-label="menWear">Men's Wear</option>
+                <option value="2">Women's Wear</option>
+                <option value="3" data-label="Outdoors">Outdoors</option>
+                <option value="4">Home</option>
             </select>
-        </div>
+
+            <select id="cd-dropdown3" name="cd-dropdown" class="cd-select">
+                <option value="-1" selected>I'm Shopping In</option>
+                <option value="City">On my bike</option>
+                <option value="Woods">In the woods</option>
+                <option value="3" >Modern Home</option>
+                <option value="4" >Beach Side</option>
+            </select>
         
-            <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
-                <option value="-1" selected>In the Setting</option>
-                <option value="1" class="">City</option>
-                <option value="2" class="">Woods</option>
-                <option value="3" class="">Modern Home</option>
-                <option value="4" class="">Beach Side</option>
+            <select id="cd-dropdown4" name="cd-dropdown dd-4" class="cd-select">
+                <option value="-1" selected>I Want To Be</option>
+                <option value="1" data-label="fancy">Fancy</option>
+                <option value="2" data-label="comfortable">Comfortable</option>
+                <option value="3" class="">Vintage</option>
+                <option value="4" class="">Rugged</option>
             </select>
-        
-            <select id="cd-dropdown" name="cd-dropdown dd-4" class="cd-select">
-                <option value="-1" selected>Make My Life</option>
-                <option value="1" class="">Monkey</option>
-                <option value="2" class="">Bear</option>
-                <option value="3" class="">Squirrel</option>
-                <option value="4" class="">Elephant</option>
-            </select>
+
         </section><!-- manifesto nav-->
 
         <section class="product-display">
-
             <div class="background-image">
-                <img src="images/made.jpg">
+                <div class="hidden isMade"><img src="images/made.jpg"></div>
+                <div class="hidden isCity"><img src="images/san-fran.jpg"></div>
+                <div class="hidden isWoods"><img src="images/scenery.jpg"><div>
             </div><!-- background image-->
-        
         </section><!-- product display -->
 
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.dropdown.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript">
             $( function() {
                 $( '#cd-dropdown' ).dropdown( {
@@ -62,17 +64,18 @@
                 } );
             });
 			$( function() {
-				$( '#cd-dropdown' ).dropdown( {
+				$( '#cd-dropdown2' ).dropdown( {
 					gutter : 5
 				} );
 			});
             $( function() {
-                $( '#cd-dropdown' ).dropdown( {
+                $( '#cd-dropdown3' ).dropdown( {
                     gutter : 5
-                } );
+                });
             });
+
             $( function() {
-                $( '#cd-dropdown' ).dropdown( {
+                $( '#cd-dropdown4' ).dropdown( {
                     gutter : 5
                 } );
             });
