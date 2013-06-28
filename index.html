@@ -30,8 +30,8 @@
 
             <select id="cd-dropdown3" name="cd-dropdown" class="cd-select">
                 <option value="-1" selected>I'm Shopping In</option>
-                <option value="City">On my bike</option>
-                <option value="Woods">In the woods</option>
+                <option value="City" class="bike">On my bike</option>
+                <option value="Woods" data-label="WoodsOption">In the woods</option>
                 <option value="3" >Modern Home</option>
                 <option value="4" >Beach Side</option>
             </select>
@@ -46,13 +46,13 @@
 
         </section><!-- manifesto nav-->
 
-        <section class="product-display">
-            <div class="background-image">
-                <div class="hidden isMade"><img src="images/made.jpg"></div>
-                <div class="hidden isCity"><img src="images/san-fran.jpg"></div>
-                <div class="hidden isWoods"><img src="images/scenery.jpg"><div>
+        <div class="product-display">
+            <div class="backgrd">
+                <img src="images/made.jpg" id="made">
+                <img src="images/san-fran.jpg" id="city" class="hidden">
+                <img src="images/scenery.jpg" id="woods" class="hidden">
             </div><!-- background image-->
-        </section><!-- product display -->
+        </div><!-- product display -->
 
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.dropdown.js"></script>
